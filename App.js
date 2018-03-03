@@ -11,6 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
+import Header from './src/components/Header';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -24,6 +25,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+        <Header />
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
@@ -33,6 +35,7 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        <Text>Some Texts</Text>
       </View>
     );
   }
