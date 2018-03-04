@@ -12,6 +12,7 @@ import {
   View
 } from 'react-native';
 import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -24,22 +25,33 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-        <Header />
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-        <Text>Some Texts</Text>
+      <View>
+        <Header headerText="hi"/>
+        <AlbumList />
       </View>
     );
   }
 }
+
+// export default class App extends Component<Props> {
+//   render() {
+//     return (
+//       <View style={styles.container}>
+//         <Header />
+//         <Text style={styles.welcome}>
+//           Welcome to React Native!
+//         </Text>
+//         <Text style={styles.instructions}>
+//           To get started, edit App.js
+//         </Text>
+//         <Text style={styles.instructions}>
+//           {instructions}
+//         </Text>
+//         <Text>Some Texts</Text>
+//       </View>
+//     );
+//   }
+// }
 
 const styles = StyleSheet.create({
   container: {
