@@ -26,7 +26,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View>
-        <Header headerText="hi"/>
+        <Header headerText="Albums"/>
         <AlbumList />
       </View>
     );
